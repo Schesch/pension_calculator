@@ -134,7 +134,7 @@ if sprache == 'Deutsch':
 
 
 
-    excel_path = '/Users/schesch/Desktop/web_dashboard/Pensplan_Calculator/data/Laborfond.xlsx'
+    excel_path = 'data/Laborfond.xlsx'
 
     # Read Excel file
     df = pd.read_excel(excel_path, sheet_name=fund_name)
@@ -394,7 +394,7 @@ elif sprache == "Italienisch":
 
 
 
-    excel_path = '/Users/schesch/Desktop/web_dashboard/Pensplan_Calculator/data/Laborfond.xlsx'
+    excel_path = 'data/Laborfond.xlsx'
 
     # Read Excel file
     df = pd.read_excel(excel_path, sheet_name=fund_name)
