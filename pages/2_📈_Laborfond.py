@@ -1,6 +1,4 @@
 import streamlit as st
-import streamlit_authenticator as stauth
-from streamlit import session_state as ss
 import pandas as pd
 import matplotlib.pyplot as plt
 
