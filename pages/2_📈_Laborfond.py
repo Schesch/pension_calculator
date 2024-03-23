@@ -134,7 +134,7 @@ if sprache == 'Deutsch':
 
 
 
-    excel_path = 'https://raw.githubusercontent.com/Schesch/pension_calculator/data/Laborfond.xlsx'
+    excel_path = 'data/Laborfond.xlsx'
 
     # Read Excel file
     df = pd.read_excel(excel_path, sheet_name=fund_name)
