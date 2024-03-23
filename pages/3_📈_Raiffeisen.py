@@ -510,7 +510,7 @@ elif sprache == "Italienisch":
 
 
 
-    excel_path = '/Users/schesch/Desktop/web_dashboard/Pensplan_Calculator/data/Raiffeisen.xlsx'
+    excel_path = 'https://raw.githubusercontent.com/Schesch/pension_calculator/main/data/Raiffeisen.xlsx''
 
     # Read Excel file
     df = pd.read_excel(excel_path, sheet_name=fund_name)
