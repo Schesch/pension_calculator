@@ -291,12 +291,12 @@ if sprache == "Deutsch":
 
 
     col1, col2 = st.columns(2)
-    col1.metric("Gesamte Beiträge vom " + first_date + " bis zum " + last_date, f"{round(total_contributions, 1):,}€")
+    col1.metric("Beiträge vom " + first_date + " bis zum " + last_date, f"{round(total_contributions, 1):,}€")
     col2.metric("Portfolio Wert am " + last_date, f"{round(portfolio_value, 1):,}€")
         
     col3, col4 = st.columns(2)
     col3.metric("Gewinn am " + last_date, f"{round(profit, 1):,}€")
-    col4.metric("Gesamte Performance vom " + first_date + " bis zum " + last_date, f"{round(profit_percent, 1):,}%")
+    col4.metric("Performance vom " + first_date + " bis zum " + last_date, f"{round(profit_percent, 1):,}%")
 
     style_metric_cards()
 
@@ -620,12 +620,12 @@ elif sprache == "Italienisch":
     last_date = max(df_filtered["Datum"]).strftime("%d/%m/%Y")
 
     col1, col2 = st.columns(2)
-    col1.metric("Contributi totali dal " + first_date + " al " + last_date, f"{round(total_contributions, 1):,}€")
-    col2.metric("Valore del portafoglio al " + last_date, f"{round(portfolio_value, 1):,}€")
+    col1.metric("Contributi dal " + first_date + " al " + last_date, f"{round(total_contributions, 1):,}€")
+    col2.metric("Valore portafoglio al " + last_date, f"{round(portfolio_value, 1):,}€")
         
     col3, col4 = st.columns(2)
     col3.metric("Profitto al " + last_date, f"{round(profit, 1):,}€")
-    col4.metric("Performance totale dal " + first_date + " al " + last_date, f"{round(profit_percent, 1):,}%")
+    col4.metric("Performance dal " + first_date + " al " + last_date, f"{round(profit_percent, 1):,}%")
 
     style_metric_cards()
 
