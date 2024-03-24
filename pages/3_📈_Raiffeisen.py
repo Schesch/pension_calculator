@@ -234,7 +234,7 @@ if sprache == "Deutsch":
         * Für die Linie Dynamic: ab Q1 2007
                 """
             )
-         except NameError:
+        except NameError:
             st.markdown(
                 """
         Die Simulation kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
