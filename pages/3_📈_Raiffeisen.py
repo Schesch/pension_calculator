@@ -259,6 +259,17 @@ if sprache == "Deutsch":
         * Für die Linie Dynamic: ab Januar 2007
                 """
             )
+      except NameError:
+            st.markdown(
+                """
+        Die Simulation kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
+        Überprüfen Sie, ob Sie einen gültigen Startpunkt gewählt haben.
+        * Für die Linie Guaranty: ab Januar 2019
+        * Für die Linie Safe: ab November 2005
+        * Für die Linie Activity: ab November 2005
+        * Für die Linie Dynamic: ab Januar 2007
+                """
+            )
 
 
     portfolio_value = 0
