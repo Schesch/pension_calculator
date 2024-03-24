@@ -14,7 +14,7 @@ st.set_page_config(page_title="Portfolio Calculator", page_icon=":chart_with_upw
 
 sprache = st.selectbox(
    "Language",
-   ("Deutsch", "Italienisch"),
+   ("Deutsch", "Italiano"),
    index=0,
    placeholder="",
 )
@@ -278,7 +278,7 @@ if sprache == 'Deutsch':
         """Entwickelt von **Alex Laimer**"""
     )
 
-elif sprache == "Italienisch":
+elif sprache == "Italiano":
     st.title("Calcolatore del fondo pensione complementare - Laborfonds")
     st.markdown("Questa calcolatrice le permette di visualizzare lo sviluppo dei suoi contributi nel fondo pensione complementare.")
     st.markdown("Può scegliere tra le linee di investimento, offerte dal Laborfonds, e determinare l'inizio dei contributi per la simulazione.")
