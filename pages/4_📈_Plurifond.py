@@ -409,7 +409,7 @@ elif sprache == "Italiano":
     placeholder="Tipo di contributo",
     )
     st.markdown("**Base Collettiva:** L'importo dei contributi è stabilito nei rispettivi contratti collettivi di lavoro. Il contributo del lavoratore può inoltre essere aumentato. Vengono trattenuti mensilmente dallo stipendio e calcolati sul reddito lordo. Successivamente, vengono versati direttamente dall'azienda al fondo pensione complementare su base trimestrale e registrati nella Certificazione Unica (CU).")
-    st.markdown("**Individuell:** Se l'adesione avviene su base individuale, il membro può determinare autonomamente l'ammontare e la regolarità dei versamenti dei contributi, effettuando i pagamenti direttamente al fondo pensione complementare e dichiarando tali importi nella dichiarazione dei redditi. In questo modo, è possibile dedurre i contributi dall'imposta sul reddito.")
+    st.markdown("**Individuale:** Se l'adesione avviene su base individuale, il membro può determinare autonomamente l'ammontare e la regolarità dei versamenti dei contributi, effettuando i pagamenti direttamente al fondo pensione complementare e dichiarando tali importi nella dichiarazione dei redditi. In questo modo, è possibile dedurre i contributi dall'imposta sul reddito.")
 
 
     st.markdown("<div style='margin: 25px;'></div>", unsafe_allow_html=True)
