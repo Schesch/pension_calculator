@@ -223,7 +223,7 @@ if sprache == "Deutsch":
         * Erstes Jahr Einzahlung: {jahr}
                 """
             )
-        except IndexError:
+        except NameError:
             st.markdown(
                 """
         Die Simulation kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
@@ -232,17 +232,6 @@ if sprache == "Deutsch":
         * Für die Linie Safe: ab Q4 2005
         * Für die Linie Activity: ab Q4 2005
         * Für die Linie Dynamic: ab Q1 2007
-                """
-            )
-        except NameError:
-            st.markdown(
-                """
-        Die Simulation kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
-        Überprüfen Sie, ob Sie einen gültigen Startpunkt gewählt haben.
-        * Für die Linie Guaranty: ab Januar 2019
-        * Für die Linie Safe: ab November 2005
-        * Für die Linie Activity: ab November 2005
-        * Für die Linie Dynamic: ab Januar 2007
                 """
             )
     elif typ == "Individuell":
@@ -259,18 +248,7 @@ if sprache == "Deutsch":
         * Erstes Jahr Einzahlung: {jahr}
                 """
             )
-        except IndexError:
-            st.markdown(
-                """
-        Die Simulation kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
-        Überprüfen Sie, ob Sie einen gültigen Startpunkt gewählt haben.
-        * Für die Linie Guaranty: ab Januar 2019
-        * Für die Linie Safe: ab November 2005
-        * Für die Linie Activity: ab November 2005
-        * Für die Linie Dynamic: ab Januar 2007
-                """
-            )
-         except NameError:
+        except NameError:
             st.markdown(
                 """
         Die Simulation kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
