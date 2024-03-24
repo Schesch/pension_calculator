@@ -10,7 +10,7 @@ st.set_page_config(page_title="Portfolio Calculator", page_icon=":chart_with_upw
 
 sprache = st.selectbox(
    "Language",
-   ("Deutsch", "Italienisch"),
+   ("Deutsch", "Italiano"),
    index=0,
    placeholder="",
 )
@@ -372,7 +372,7 @@ if sprache == "Deutsch":
         """Entwickelt von **Alex Laimer**"""
     )
 
-elif sprache == "Italienisch":
+elif sprache == "Italiano":
 
     st.title("Calcolatore del fondo pensione complementare - Plurifonds")
 
