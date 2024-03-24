@@ -223,7 +223,7 @@ if sprache == "Deutsch":
         * Erstes Jahr Einzahlung: {jahr}
                 """
             )
-        except NameError:
+        except (NameError, IndexError):
             st.markdown(
                 """
         Die Simulation kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
