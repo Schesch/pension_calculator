@@ -42,7 +42,7 @@ def style_metric_cards(
 
 if sprache == "Deutsch":
 
-    st.title("Zusatzrentenfonds Rechner - Plurifonds")
+    st.title("Zusatzrentenfonds Rechner - Plurifond")
 
 
 
@@ -374,7 +374,7 @@ if sprache == "Deutsch":
 
 elif sprache == "Italiano":
 
-    st.title("Calcolatore del fondo pensione complementare - Plurifonds")
+    st.title("Calcolatore del fondo pensione complementare - Plurifond")
 
 
 
