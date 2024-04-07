@@ -163,7 +163,7 @@ if sprache == "Deutsch":
     with spar1:
         rentenposition = st.number_input('Angespartes Kapital im Rentenfonds', format='%.0f', placeholder= "", value = float(15000), step = float(1000))
     with spar2:
-        kredit2_laufzeit = st.number_input('Laufzeit des Bauspardarlehens in Jahren', format='%.0f', placeholder= "", value = float(20), step = float(1))
+        kredit2_laufzeit = st.number_input('Laufzeit Bauspardarlehen in Jahren', format='%.0f', placeholder= "", value = float(20), step = float(1))
     with spar3:
         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: center;} </style>', unsafe_allow_html=True)
         anstellung = st.radio(
@@ -224,7 +224,7 @@ if sprache == "Deutsch":
     st.markdown(f"Gesamte Zinsersparnis mit dem Bausparmodell beträgt: **{format_eu(zinsersparnis)} €**")
 
 
-
+      
 
 
 
@@ -268,7 +268,7 @@ elif sprache == "Italiano":
     with spar1:
         rentenposition = st.number_input('Capitale accumulato nel fondo pensione', format='%.0f', placeholder= "", value = float(15000), step = float(1000))
     with spar2:
-        kredit2_laufzeit = st.number_input('Durata del Mutuo Risparmio Casa in anno', format='%.0f', placeholder= "", value = float(20), step = float(1))
+        kredit2_laufzeit = st.number_input('Durata Mutuo Risparmio Casa in anni', format='%.0f', placeholder= "", value = float(20), step = float(1))
     with spar3:
         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: center;} </style>', unsafe_allow_html=True)
         anstellung = st.radio(
