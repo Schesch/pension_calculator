@@ -23,7 +23,7 @@ sprache = st.selectbox(
 if sprache == 'Deutsch':
     st.title("Zusatzrentenfonds Rechner - Laborfonds")
     st.markdown("Dieser Rechner ermöglich es Ihnen die Entwicklung Ihrer Beiträge im Zusatzrentenfonds zu visualisieren.")
-    st.markdown("Sie können zwischen den angebotenen Investitionslinien auswählen und den Beitragsbeginn für die Simulation bestimmen.")
+    st.markdown("Sie können zwischen den angebotenen Investitionslinien auswählen und den Beitragsbeginn für die Berechnung bestimmen.")
     st.markdown(
         """ 
                 * Investitionslinie **Garantierte Linie**: Geringes Risiko
@@ -39,7 +39,7 @@ if sprache == 'Deutsch':
     st.markdown("<div style='margin: 25px;'></div>", unsafe_allow_html=True)  
 
 
-    st.subheader("Simulieren Sie die Portfolio Entwicklung")
+    st.subheader("Berechnen Sie die Portfolio Entwicklung")
     st.markdown("In dieser Berechnung werden die öffentlich zugänglichen Daten des jeweiligen Pensionsfonds verwendet. Alle Pensionsfonds sind verpflichtet den Wert aller Investitionslinien zu veröffentlichen. Dabei wird der sogennante Net Asset Value verwendet, bei welchem jegliche Verwaltungskosten (bis auf Mitgliedsgebühr) bereits abgezogen sind.")
 
 
@@ -158,7 +158,7 @@ if sprache == 'Deutsch':
         df_filtered = df.iloc[start_idx:]
         st.markdown(
             f"""
-    Sie haben folgende Parameter für die Simulation ausgewählt:
+    Sie haben folgende Parameter für die Berechnung ausgewählt:
     * Investitionslinie: {line}
     * Einkommen: {einkommen}€
     * Arbeitnehmer Beitrag: {an_beitrag}%
@@ -172,7 +172,7 @@ if sprache == 'Deutsch':
     except IndexError:
         st.markdown(
             """
-    Die Simulation kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
+    Die Berechnung kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
     Überprüfen Sie, ob Sie einen gültigen Startpunkt gewählt haben.
     * Für die Garantierte Linie: ab Q1 2008
     * Für die Ausgewogene Linie: ab Q3 2000
@@ -292,7 +292,7 @@ if sprache == 'Deutsch':
 elif sprache == "Italiano":
     st.title("Calcolatore del fondo pensione complementare - Laborfonds")
     st.markdown("Questa calcolatrice le permette di visualizzare lo sviluppo dei suoi contributi nel fondo pensione complementare.")
-    st.markdown("Può scegliere tra le linee di investimento, offerte dal Laborfonds, e determinare l'inizio dei contributi per la simulazione.")
+    st.markdown("Può scegliere tra le linee di investimento, offerte dal Laborfonds, e determinare l'inizio dei contributi per la calcolazione.")
     st.markdown(
         """ 
                 * Linea di Investimento **Linea Garantita**: Rischio basso
@@ -429,7 +429,7 @@ elif sprache == "Italiano":
         df_filtered = df.iloc[start_idx:]
         st.markdown(
             f"""
-    Ha selezionato i seguenti parametri per la simulazione:
+    Ha selezionato i seguenti parametri per la calcolazione:
     * Linea di investimento: {line}
     * Reddito: {einkommen}€
     * Contributo del lavoratore: {an_beitrag}%
@@ -443,7 +443,7 @@ elif sprache == "Italiano":
     except IndexError:
         st.markdown(
             """
-    La simulazione non può essere avviata al momento da lei indicato, poiché i dati non sono disponibili.
+    La calcolazione non può essere avviata al momento da lei indicato, poiché i dati non sono disponibili.
     Verifichi di aver scelto un punto di inizio valido.
     * Per la Linea Garantita: da Q1 2008
     * Per la Linea Bilanciata: da Q3 2000
