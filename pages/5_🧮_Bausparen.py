@@ -150,7 +150,7 @@ if sprache == "Deutsch":
     with col1:
         kreditsumme = st.number_input('Summe des Darlehens', format='%.0f', placeholder= "", value = float(300000), step = float(10000))
     with col2:
-        jahreszinssatz = st.number_input('Zinssatz des Darlehens (%)', format='%.2f', placeholder= "", value = float(3.50), step = float(0.10))
+        jahreszinssatz = st.number_input('Zinssatz des Darlehens (%)', format='%.2f', placeholder= "", value = float(4.50), step = float(0.10))
     with col3:
         laufzeit_in_jahren = st.number_input('Laufzeit des Darlehens in Jahren', format='%.0f', placeholder= "", value = float(30), step = float(1))
 
@@ -255,7 +255,7 @@ elif sprache == "Italiano":
     with col1:
         kreditsumme = st.number_input('Somma del Prestito', format='%.0f', placeholder= "", value = float(300000), step = float(10000))
     with col2:
-        jahreszinssatz = st.number_input('Tasso di interesse del prestito (%)', format='%.2f', placeholder= "", value = float(3.50), step = float(0.10))
+        jahreszinssatz = st.number_input('Tasso di interesse del prestito (%)', format='%.2f', placeholder= "", value = float(4.50), step = float(0.10))
     with col3:
         laufzeit_in_jahren = st.number_input('Durata del prestito in anno', format='%.0f', placeholder= "", value = float(30), step = float(1))
 
