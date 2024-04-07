@@ -47,7 +47,7 @@ if sprache == "Deutsch":
 
 
     st.markdown("Dieser Rechner ermöglich es Ihnen die Entwicklung Ihrer Beiträge im Zusatzrentenfonds zu visualisieren.")
-    st.markdown("Sie können die Investitionslinie und Beitragsbeginn für die Simulation bestimmen, welche vom Plurifonds ITAS Vita angeboten werden.")
+    st.markdown("Sie können die Investitionslinie und Beitragsbeginn für die Berechnung bestimmen, welche vom Plurifonds ITAS Vita angeboten werden.")
     st.markdown(
         """ 
                 * Investitionslinie **Securitas**: Geringes Risiko
@@ -240,7 +240,7 @@ if sprache == "Deutsch":
         except IndexError:
             st.markdown(
                 """
-        Die Simulation kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
+        Die Berechnung kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
         Überprüfen Sie, ob Sie einen gültigen Startpunkt gewählt haben.
         * Für die Linie Securitas: ab Q2 2001
         * Für die Linie Serenitas: ab Q2 2001
@@ -266,7 +266,7 @@ if sprache == "Deutsch":
         except IndexError:
             st.markdown(
                 """
-        Die Simulation kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
+        Die Berechnung kann nicht zu Ihrem angegeben Zeiptunkt nicht gestartet werden, da die Daten nicht verfügbar sind.
         Überprüfen Sie, ob Sie einen gültigen Startpunkt gewählt haben.
         * Für die Linie Securitas: ab Q2 2001
         * Für die Linie Serenitas: ab Q2 2001
@@ -388,7 +388,7 @@ elif sprache == "Italiano":
 
 
     st.markdown("Questa calcolatrice le permette di visualizzare lo sviluppo dei suoi contributi nel fondo pensione complementare.")
-    st.markdown("Può scegliere tra le linee di investimento, offerte da Plurifonds ITAS Vita, e determinare l'inizio dei contributi per la simulazione.")
+    st.markdown("Può scegliere tra le linee di investimento, offerte da Plurifonds ITAS Vita, e determinare l'inizio dei contributi per la calcolazione.")
     st.markdown(
         """ 
                 * Linea di Investimento **Securitas**: Rischio basso
@@ -568,7 +568,7 @@ elif sprache == "Italiano":
             df_filtered = df_filtered.groupby(['Quartal', 'Jahr']).tail(1)
             st.markdown(
                 f"""
-        Ha selezionato i seguenti parametri per la simulazione:
+        Ha selezionato i seguenti parametri per la calcolazione:
         * Linea di investimento: {line}
         * Reddito: {income}€
         * Contributo del lavoratore: {an_beitrag}%
@@ -582,7 +582,7 @@ elif sprache == "Italiano":
         except IndexError:
             st.markdown(
                 """
-        La simulazione non può essere avviata al momento da lei indicato, poiché i dati non sono disponibili.
+        La calcolazione non può essere avviata al momento da lei indicato, poiché i dati non sono disponibili.
         Verifichi di aver scelto un punto di inizio valido.
         * Per la linea Securitas: da Q2 2001
         * Per la linea Serenitas: da Q2 2001
@@ -597,7 +597,7 @@ elif sprache == "Italiano":
             df_filtered = df.iloc[start_idx::filter_range]
             st.markdown(
                 f"""
-         Ha selezionato i seguenti parametri per la simulazione:
+         Ha selezionato i seguenti parametri per la calcolazione:
         * Linea di investimento: {line}
         * Somma versata: {einzahlung}€
         * Intervallo del versamento: : {intervall}
@@ -608,7 +608,7 @@ elif sprache == "Italiano":
         except IndexError:
             st.markdown(
                 """
-        La simulazione non può essere avviata al momento da lei indicato, poiché i dati non sono disponibili.
+        La calcolazione non può essere avviata al momento da lei indicato, poiché i dati non sono disponibili.
         Verifichi di aver scelto un punto di inizio valido.
         * Per la linea Guaranty: da Q1 2019
         * Per la linea Safe: da Q4 2005
@@ -619,7 +619,7 @@ elif sprache == "Italiano":
         except NameError:
             st.markdown(
                 """
-        La simulazione non può essere avviata al momento da lei indicato, poiché i dati non sono disponibili.
+        La calcolazione non può essere avviata al momento da lei indicato, poiché i dati non sono disponibili.
         Verifichi di aver scelto un punto di inizio valido.
         * Per la linea Guaranty: da Q1 2019
         * Per la linea Safe: da Q4 2005
